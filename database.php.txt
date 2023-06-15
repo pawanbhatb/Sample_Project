@@ -1,0 +1,14 @@
+<?php
+$host = "localhost"; // Replace with your host
+$username = "username"; // Replace with your MySQL username
+$password = "password"; // Replace with your MySQL password
+$database = "database_name"; // Replace with your database name
+
+// Create a new MySQLi instance
+$mysqli = new mysqli($host, $username, $password, $database);
+
+// Check the connection
+if ($mysqli->connect_error) {
+    die("Connection failed: " . $mysqli->connect_error);
+}
+?>
